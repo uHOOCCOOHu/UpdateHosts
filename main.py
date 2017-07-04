@@ -11,7 +11,7 @@ FETCH_URL = 'https://raw.githubusercontent.com/racaljk/hosts/master/hosts'
 MATCH_PATTERN = re.compile(
     r'(.*?# Last updated: )(\d+)-(\d+)-(\d+)(.*?# Modified hosts start)' +
     r'(.*)(# Modified hosts end.*)',
-    re.DOTALL | re.S,
+    re.DOTALL | re.IGNORECASE,
 )
 DATE_FORMAT = '%Y-%m-%d'
 
